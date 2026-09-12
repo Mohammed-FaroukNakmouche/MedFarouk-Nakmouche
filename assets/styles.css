@@ -58,10 +58,31 @@ img { max-width: 100%; display: block; }
 .icon-button { width: 42px; height: 42px; font-size: 1rem; }
 .menu-button { display: none; width: 44px; height: 44px; font-size: 1.25rem; }
 .page-shell { padding: 2.6rem 0 4rem; }
-.profile-grid { display: grid; grid-template-columns: 320px 1fr; gap: 2rem; align-items: start; }
-.profile-photo { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 28px; box-shadow: var(--shadow); border: 1px solid var(--border); background: var(--surface); }
+
+/* About-page biography: reference-style wrapped layout.
+   The portrait floats beside the opening text; once the text passes
+   the bottom of the portrait, subsequent lines use the full page width. */
+.profile-grid { display: block; }
+.profile-grid::after { content: ""; display: block; clear: both; }
+.profile-grid > div:first-child {
+  float: left;
+  width: 270px;
+  margin: 0 2rem 1rem 0;
+}
+.profile-copy { display: block; }
+.profile-photo {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+  background: var(--surface);
+}
 .profile-name, .page-heading { margin: 0; font-size: clamp(2rem, 4vw, 3rem); line-height: 1.1; letter-spacing: -0.03em; }
 .profile-subtitle, .page-description { color: var(--text-soft); font-size: 1.06rem; margin-top: 0.7rem; }
+.profile-copy p { margin: 0 0 1.05rem; }
 .profile-links, .scholar-actions { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 1.3rem; }
 .button-link, .pub-link, .project-link {
   display: inline-flex; align-items: center; justify-content: center; gap: 0.35rem;
@@ -128,7 +149,12 @@ img { max-width: 100%; display: block; }
 .footer-links { display: flex; gap: 1rem; flex-wrap: wrap; }
 
 @media (max-width: 900px) {
-  .profile-grid, .pillar-grid, .direction-list, .project-grid { grid-template-columns: 1fr; }
+  .profile-grid > div:first-child {
+    float: none;
+    width: min(300px, 100%);
+    margin: 0 0 1.5rem;
+  }
+  .pillar-grid, .direction-list, .project-grid { grid-template-columns: 1fr; }
   .scholar-block { flex-direction: column; align-items: flex-start; }
 }
 @media (max-width: 760px) {
