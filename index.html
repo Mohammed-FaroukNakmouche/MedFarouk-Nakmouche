@@ -1,180 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>M.-F. Nakmouche – Personal Site</title>
-    <!-- Import Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="assets/styles.css" />
-  </head>
-  <body>
-    <!-- Header with navigation and actions -->
-    <header class="site-header">
-      <div class="container header-inner">
-        <div class="logo">
-          <a href="#home" aria-label="Home" class="logo-link">
-            <!-- Monochrome SVG uses currentColor (black in light, white in dark) -->
-            <svg class="logo-icon" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
-              <!-- roof -->
-              <path d="M3 10.5L12 4l9 6.5"
-                    fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round"/>
-              <!-- walls -->
-              <path d="M5 10.5V20a1 1 0 001 1h12a1 1 0 001-1v-9.5"
-                    fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round"/>
-              <!-- door -->
-              <path d="M9 21v-6h6v6"
-                    fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </a>
-        </div>
-        <nav id="navbar" class="nav-links">
-          <a href="#about">About</a>
-          <a href="#experience">Experience</a>
-          <a href="#education">Education</a>
-          <a href="#skills">Skills</a>
-          <a href="#articles">Articles</a>
-          <a href="#publications">Publications</a>
-          <a href="#contact">Contact</a>
-        </nav>
-        <div class="actions">
-          <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
-            🌙
-          </button>
-          <a id="emailButton" href="mailto:mohammed-farouk.nakmouche.1@ens.etsmtl.ca" class="btn small">Email</a>
-          <a href="cv.pdf" class="btn outline small" download>CV</a>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mohammed Farouk Nakmouche — RF, microwave, millimeter-wave antennas, waveguides, additive manufacturing, and AI-assisted electromagnetic design." />
+  <title>Mohammed Farouk Nakmouche | About</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body data-page="about">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="site-brand" href="index.html">Mohammed Farouk Nakmouche</a>
+      <button class="menu-button" id="menuToggle" aria-label="Toggle navigation">☰</button>
+      <nav class="nav-links" id="siteNav" aria-label="Main navigation">
+        <a href="index.html" data-nav="about">About</a>
+        <a href="research.html" data-nav="research">Research</a>
+        <a href="publications.html" data-nav="publications">Publications</a>
+        <a href="projects.html" data-nav="projects">Projects</a>
+        <a href="cv.pdf" target="_blank" rel="noopener">CV</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button" id="themeToggle" aria-label="Toggle color theme">◐</button>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <!-- Social links bar -->
-    <aside id="socialBar" class="social-bar"></aside>
-
-    <main>
-      <!-- Hero section -->
-      <section id="home" class="hero-section">
-        <div class="container hero-container">
-          <div class="hero-left">
-            <span id="heroHighlight" class="highlight-badge"></span>
-            <h1 class="hero-title">Hi, I'm <span id="heroName"></span></h1>
-            <p id="heroTagline" class="hero-tagline"></p>
-            <div id="heroRoles" class="hero-roles"></div>
-            <p id="heroDescription" class="hero-description"></p>
-            <div class="hero-buttons">
-              <a href="#about" class="btn">Learn More</a>
-              <a href="#publications" class="btn outline">View Publications</a>
-            </div>
-          </div>
-          <div class="hero-right">
-          <img id="heroPhoto"
-           src="Images/profile.png"
-           alt="Portrait"
-           class="hero-photo"
-           onerror="this.onerror=null;this.src='Images/profile.png'"
-            />
-
+  <main class="page-shell">
+    <div class="container">
+      <section class="profile-grid">
+        <div>
+          <img src="Images/profile.png" alt="Mohammed Farouk Nakmouche" class="profile-photo" />
+        </div>
+        <div class="profile-copy">
+          <h1 class="profile-name">Mohammed Farouk Nakmouche</h1>
+          <p class="profile-subtitle">RF / Microwave / Millimeter-Wave Researcher · Antennas &amp; Waveguides · AI-Assisted Electromagnetic Design · Additive Manufacturing</p>
+          <p>I am a researcher in electrical engineering working on antennas, passive microwave and millimeter-wave components, and compact high-frequency hardware. My research combines electromagnetic design with machine learning to accelerate the synthesis and optimization of antennas, substrate-integrated waveguides, printed ridge gap waveguides, and fully metallic ridge gap waveguides.</p>
+          <p>My work also explores additive and advanced manufacturing for low-cost, compact, and non-conventional RF front ends, including 3-D-printed waveguide components, reconfigurable antennas, MIMO systems, and antenna-in-package concepts for emerging wireless and Internet-of-Space applications.</p>
+          <p>I have contributed to research projects in Canada, Algeria, France, Turkey, Egypt, Taiwan, and Singapore, spanning academic research, industrial R&amp;D, and early-stage technology development.</p>
+          <div class="profile-links">
+            <a class="button-link primary" href="research.html">Research overview</a>
+            <a class="button-link" href="publications.html">Publications</a>
+            <a class="button-link" href="projects.html">Research gallery</a>
+            <a class="button-link" href="mailto:mohammed-farouk.nakmouche.1@ens.etsmtl.ca">Email</a>
+            <a class="button-link" href="cv.pdf" target="_blank" rel="noopener">CV</a>
           </div>
         </div>
       </section>
 
-      <!-- About section -->
-      <section id="about" class="section about-section">
-        <div class="container">
-          <h2 class="section-title"><span class="icon">👤</span> About Me</h2>
-          <div id="aboutContent" class="about-content"></div>
+      <section class="section-block">
+        <h2 class="section-title">Research interests</h2>
+        <div class="interest-list">
+          <span class="interest-pill">AI / ML for electromagnetic design</span>
+          <span class="interest-pill">Antennas &amp; arrays</span>
+          <span class="interest-pill">Ridge gap waveguide</span>
+          <span class="interest-pill">Printed ridge gap waveguide</span>
+          <span class="interest-pill">Substrate-integrated waveguide</span>
+          <span class="interest-pill">Microwave &amp; mmWave components</span>
+          <span class="interest-pill">MIMO antennas</span>
+          <span class="interest-pill">Additive manufacturing</span>
+          <span class="interest-pill">Antenna-in-package</span>
+          <span class="interest-pill">Reconfigurable RF hardware</span>
         </div>
       </section>
 
-      <!-- Experience section -->
-      <section id="experience" class="section">
-        <div class="container">
-          <h2 class="section-title"><span class="icon">💼</span> Experience</h2>
-          <div id="experienceTimeline" class="timeline"></div>
-        </div>      
-      </section>
-
-      <!-- Education section -->
-      <section id="education" class="section">
-        <div class="container">
-          <h2 class="section-title"><span class="icon">🎓</span> Education</h2>
-          <div id="educationTimeline" class="timeline"></div>
+      <section class="section-block">
+        <h2 class="section-title">News</h2>
+        <div class="news-list">
+          <article class="news-item"><div class="news-date">2025</div><p class="news-text">Published work on machine-learning-aided defected-ground-structure design for PRGW-based MIMO antennas in <em>IEEE Transactions on Antennas and Propagation</em>.</p></article>
+          <article class="news-item"><div class="news-date">2024</div><p class="news-text">Presented machine-learning-assisted Fabry–Perot array antenna research at the IEEE AP-S/URSI Symposium.</p></article>
+          <article class="news-item"><div class="news-date">2023–24</div><p class="news-text">Research activities at the National Research Council Canada included MIMO radar antennas, origami antennas, and printed SIW/PRGW waveguide concepts.</p></article>
+          <article class="news-item"><div class="news-date">2022–</div><p class="news-text">Doctoral research at ÉTS Montréal focused on scalable AI-assisted synthesis and advanced manufacturing of RF and millimeter-wave components.</p></article>
         </div>
       </section>
+    </div>
+  </main>
 
-      <!-- Skills section -->
-      <section id="skills" class="section">
-        <div class="container">
-          <h2 class="section-title"><span class="icon">🛠️</span> Skills</h2>
-          <div id="skillsContainer" class="skills-container"></div>
-        </div>
-      </section>
-
-      <!-- Articles section -->
-      <section id="articles" class="section">
-        <div class="container">
-          <h2 class="section-title"><span class="icon">📰</span> Latest Articles</h2>
-          <div id="articlesContainer" class="articles-container"></div>
-        </div>
-      </section>
-
-      <!-- Publications section -->
-      <section id="publications" class="section">
-        <div class="container">
-          <h2 class="section-title"><span class="icon">📚</span> Publications</h2>
-          <div id="publicationsContainer" class="publications-container"></div>
-        </div>
-      </section>
-
-      <!-- Contact section -->
-      <section id="contact" class="section">
-        <div class="container">
-          <h2 class="section-title"><span class="icon">✉️</span> Contact Me</h2>
-          <form id="contactForm" class="contact-form" action="mailto:mohammed-farouk.nakmouche.1@ens.etsmtl.ca" method="post" enctype="text/plain">
-            <div class="form-row">
-              <label for="name">Full Name *</label>
-              <input id="name" name="name" type="text" placeholder="Your Name" required />
-            </div>
-            <div class="form-row">
-              <label for="email">Email Address *</label>
-              <input id="email" name="email" type="email" placeholder="email@example.com" required />
-            </div>
-            <div class="form-row">
-              <label for="subject">Subject *</label>
-              <input id="subject" name="subject" type="text" placeholder="Subject" required />
-            </div>
-            <div class="form-row">
-              <label for="message">Message *</label>
-              <textarea id="message" name="message" placeholder="Your message" required></textarea>
-            </div>
-            <p class="privacy-note">
-              By submitting this form, you agree to our privacy policy.
-            </p>
-            <button type="submit" class="btn">Send Message</button>
-          </form>
-        </div>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="site-footer">
-      <div class="container">
-        <p>
-          &copy; <span id="footerYear"></span> Mohammed Farouk Nakmouche. All rights
-          reserved.
-        </p>
-      </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="data/profile.js"></script>
-    <script src="assets/script.js"></script>
-  </body>
+  <footer class="site-footer"><div class="container footer-inner"><span>© <span id="footerYear"></span> Mohammed Farouk Nakmouche</span><div class="footer-links"><a href="mailto:mohammed-farouk.nakmouche.1@ens.etsmtl.ca">Email</a><a href="cv.pdf">CV</a></div></div></footer>
+  <script src="assets/script.js"></script>
+</body>
 </html>
