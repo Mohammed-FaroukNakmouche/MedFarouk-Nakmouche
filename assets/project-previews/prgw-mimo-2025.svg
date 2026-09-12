@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+<rect width="1200" height="760" rx="28" fill="#e5e7eb"/>
+<rect x="18" y="18" width="1164" height="724" rx="20" fill="#ffffff" stroke="#cbd5e1"/>
+<rect x="18" y="18" width="1164" height="54" rx="20" fill="#f8fafc" stroke="#e2e8f0"/>
+<circle cx="56" cy="45" r="8" fill="#f87171"/><circle cx="84" cy="45" r="8" fill="#fbbf24"/><circle cx="112" cy="45" r="8" fill="#34d399"/>
+<rect x="160" y="32" width="690" height="24" rx="12" fill="#e2e8f0"/>
+<text x="180" y="49" font-size="14" font-family="Inter, Arial, sans-serif" fill="#475569">ieeexplore.ieee.org / document / ...</text>
+<rect x="54" y="104" width="220" height="28" rx="14" fill="#dbeafe"/>
+<text x="70" y="123" font-size="20" font-family="Inter, Arial, sans-serif" font-weight="700" fill="#1d4ed8">IEEE journal paper</text>
+<rect x="54" y="156" width="670" height="430" rx="22" fill="#eff6ff" stroke="#bfdbfe"/>
+<rect x="88" y="188" width="206" height="146" rx="16" fill="#bfdbfe"/>
+<path d="M116 290 L154 236 L198 274 L242 216 L268 254" fill="none" stroke="#1d4ed8" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="154" cy="236" r="10" fill="#1d4ed8"/><circle cx="198" cy="274" r="10" fill="#1d4ed8"/><circle cx="242" cy="216" r="10" fill="#1d4ed8"/>
+<rect x="328" y="188" width="352" height="24" rx="12" fill="#bfdbfe"/>
+<rect x="328" y="232" width="292" height="24" rx="12" fill="#dbeafe"/>
+<rect x="328" y="276" width="248" height="24" rx="12" fill="#dbeafe"/>
+<rect x="88" y="372" width="592" height="22" rx="11" fill="#dbeafe"/>
+<rect x="88" y="410" width="592" height="22" rx="11" fill="#dbeafe"/>
+<rect x="88" y="448" width="476" height="22" rx="11" fill="#dbeafe"/>
+<rect x="88" y="486" width="416" height="22" rx="11" fill="#dbeafe"/>
+<rect x="54" y="618" width="200" height="54" rx="18" fill="#111827"/>
+<text x="84" y="651" font-size="24" font-family="Inter, Arial, sans-serif" font-weight="700" fill="#ffffff">Open article</text>
+<text x="786" y="126" font-size="16" font-family="Inter, Arial, sans-serif" fill="#64748b">Linked from project gallery</text>
+<text x="786" y="174" font-size="28" font-family="Inter, Arial, sans-serif" font-weight="700" fill="#0f172a">Machine Learning-Aided Design of</text>
+<text x="786" y="212" font-size="28" font-family="Inter, Arial, sans-serif" font-weight="700" fill="#0f172a">Defected Ground Structures for</text>
+<text x="786" y="250" font-size="28" font-family="Inter, Arial, sans-serif" font-weight="700" fill="#0f172a">PRGW-Based MIMO Antennas</text>
+<text x="786" y="300" font-size="20" font-family="Inter, Arial, sans-serif" fill="#334155">IEEE Transactions on Antennas and Propagation ·</text>
+<text x="786" y="328" font-size="20" font-family="Inter, Arial, sans-serif" fill="#334155">2025</text>
+<text x="786" y="368" font-size="18" font-family="Inter, Arial, sans-serif" fill="#475569">DOI: 10.1109/TAP.2025.3587540</text>
+</svg>

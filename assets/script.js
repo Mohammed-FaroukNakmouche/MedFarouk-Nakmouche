@@ -56,7 +56,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (matches) visibleCount += 1;
       });
       yearGroups.forEach(group => {
-        group.style.display = group.querySelector('[data-publication]:not([style*="display: none"])') ? '' : 'none';
+        const hasVisible = [...group.querySelectorAll('[data-publication]')].some(pub => pub.style.display !== 'none');
+        group.style.display = hasVisible ? '' : 'none';
       });
       sections.forEach(section => {
         const hasVisibleGroup = [...section.querySelectorAll('[data-year-group]')].some(group => group.style.display !== 'none');
