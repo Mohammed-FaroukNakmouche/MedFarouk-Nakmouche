@@ -10,62 +10,48 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/styles.css" />
   <style>
-    .affiliation-list {
+    .profile-affiliations {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.7rem;
-      margin: 0.8rem 0 1.25rem;
-    }
-    .affiliation-item {
-      flex: 1 1 320px;
-      max-width: 470px;
-      min-width: 0;
-      display: flex;
       align-items: center;
-      gap: 0.8rem;
-      padding: 0.68rem 0.82rem;
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      background: var(--surface);
-    }
-    .affiliation-logo-wrap {
-      flex: 0 0 72px;
-      height: 38px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .affiliation-logo {
-      max-width: 72px;
-      max-height: 36px;
-      width: auto;
-      height: auto;
-      object-fit: contain;
-    }
-    .tmu-logo { max-height: 34px; }
-    .affiliation-text {
-      min-width: 0;
-      display: flex;
-      flex-direction: column;
-      gap: 0.08rem;
-      line-height: 1.25;
+      gap: 0.55rem 1rem;
+      margin: 0.7rem 0 1.15rem;
       color: var(--text-soft);
-      font-size: 0.9rem;
+      font-size: 0.96rem;
+      line-height: 1.4;
     }
-    .affiliation-text strong {
+    .profile-affiliation {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.42rem;
+    }
+    .profile-affiliation img {
+      width: auto;
+      height: 18px;
+      max-width: 58px;
+      object-fit: contain;
+      flex: 0 0 auto;
+    }
+    .profile-affiliation .tmu-small-logo {
+      height: 20px;
+      max-width: 52px;
+    }
+    .profile-affiliation strong {
       color: var(--text);
-      font-size: 0.92rem;
       font-weight: 700;
     }
+    .affiliation-separator {
+      color: var(--muted);
+    }
     @media (max-width: 640px) {
-      .affiliation-list { gap: 0.55rem; }
-      .affiliation-item {
-        flex-basis: 100%;
-        max-width: none;
-        padding: 0.62rem 0.7rem;
+      .profile-affiliations {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.42rem;
       }
-      .affiliation-logo-wrap { flex-basis: 62px; }
-      .affiliation-logo { max-width: 62px; max-height: 32px; }
+      .affiliation-separator { display: none; }
+      .profile-affiliation img { height: 17px; }
+      .profile-affiliation .tmu-small-logo { height: 19px; }
       .profile-name { font-size: clamp(2rem, 11vw, 2.8rem); }
     }
   </style>
@@ -96,15 +82,16 @@
         </div>
         <div class="profile-copy">
           <h1 class="profile-name"><span style="font-weight:800;">Mohammed Farouk</span> <span style="font-weight:400;">Nakmouche</span></h1>
-          <div class="affiliation-list" aria-label="Current affiliations">
-            <div class="affiliation-item">
-              <span class="affiliation-logo-wrap"><img src="https://upload.wikimedia.org/wikipedia/commons/0/07/Huawei_wordmark.svg" alt="Huawei" class="affiliation-logo huawei-logo" /></span>
-              <span class="affiliation-text"><strong>Researcher</strong><span>Huawei Technologies Canada Research Center</span></span>
-            </div>
-            <div class="affiliation-item">
-              <span class="affiliation-logo-wrap"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/TMU_logo.svg" alt="Toronto Metropolitan University" class="affiliation-logo tmu-logo" /></span>
-              <span class="affiliation-text"><strong>Affiliated Scientist</strong><span>Toronto Metropolitan University</span></span>
-            </div>
+          <div class="profile-affiliations" aria-label="Current affiliations">
+            <span class="profile-affiliation">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/0/07/Huawei_wordmark.svg" alt="Huawei" />
+              <span><strong>Researcher</strong>, Huawei Technologies Canada Research Center</span>
+            </span>
+            <span class="affiliation-separator">·</span>
+            <span class="profile-affiliation">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/TMU_logo.svg" alt="Toronto Metropolitan University" class="tmu-small-logo" />
+              <span><strong>Affiliated Scientist</strong>, Toronto Metropolitan University</span>
+            </span>
           </div>
           <p><strong>Mohammed Farouk Nakmouche</strong> (Member, IEEE) received the B.Sc. and M.Sc. degrees in telecommunication systems and networks engineering from Amar Telidji University of Laghouat, Algeria, in 2013 and 2015, respectively, and the Ph.D. degree in electrical engineering from École de technologie supérieure (ÉTS), Montréal, Canada, in 2025. From 2015 to 2020, he contributed to research and R&amp;D projects across France, Turkey, Egypt, Taiwan, and Canada. He is currently a Researcher with Huawei Technologies Canada Research Center in Ottawa and an affiliated researcher at Toronto Metropolitan University. His doctoral dissertation, focused on machine-learning-aided design of additively manufactured ridge gap waveguide components, received the ÉTS Ph.D. Excellence Award.</p>
           <p>Dr. Nakmouche’s research expertise includes machine-learning and optimization techniques for the analysis, synthesis, and design of microwave and millimeter-wave components and systems. His work spans inverse design, physics-informed neural networks, and surrogate modeling for antennas, filters, couplers, frequency-selective surfaces, and metasurfaces, with particular emphasis on substrate integrated waveguide, ridge and gap waveguide technologies, dielectric resonator antennas, MIMO arrays, lens/transmitarray antennas, and additive or flexible RF manufacturing. A central theme of his research is the development of practical end-to-end workflows linking electromagnetic theory, CST/HFSS/ADS simulation, AI-assisted synthesis, fabrication, and experimental validation.</p>
