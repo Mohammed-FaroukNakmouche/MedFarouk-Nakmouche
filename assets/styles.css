@@ -42,7 +42,7 @@ img { max-width: 100%; display: block; }
   border-bottom: 1px solid var(--border);
 }
 .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 76px; }
-.site-brand { font-weight: 800; letter-spacing: -0.02em; }
+.site-brand { display: none; }
 .nav-links { display: flex; align-items: center; gap: 1.1rem; }
 .nav-links a { color: var(--text-soft); font-weight: 500; }
 .nav-links a.active, .nav-links a:hover { color: var(--accent); }
@@ -203,7 +203,6 @@ body[data-page="publications"] .page-header-row > .button-link { display: none; 
   .scholar-block { flex-direction: column; align-items: flex-start; }
 }
 @media (max-width: 760px) {
-  .site-brand { display: none; }
   .header-inner { gap: 0.45rem; }
   .menu-button { display: inline-flex; align-items: center; justify-content: center; }
   .nav-links {
