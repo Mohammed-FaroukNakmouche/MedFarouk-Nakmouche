@@ -25,16 +25,13 @@
       align-items: center;
       gap: 0.32rem;
     }
-    .profile-affiliation img {
+    .profile-affiliation img,
+    .profile-affiliation .tmu-small-logo {
       width: auto;
-      height: 15px;
-      max-width: 48px;
+      height: 1em;
+      max-width: 3.2em;
       object-fit: contain;
       flex: 0 0 auto;
-    }
-    .profile-affiliation .tmu-small-logo {
-      height: 17px;
-      max-width: 46px;
     }
     .profile-affiliation strong {
       color: var(--text);
@@ -50,8 +47,8 @@
         gap: 0.42rem;
       }
       .affiliation-separator { display: none; }
-      .profile-affiliation img { height: 14px; max-width: 45px; }
-      .profile-affiliation .tmu-small-logo { height: 16px; max-width: 43px; }
+      .profile-affiliation img,
+      .profile-affiliation .tmu-small-logo { height: 1em; max-width: 3.2em; }
       .profile-name { font-size: clamp(2rem, 11vw, 2.8rem); }
     }
   </style>
