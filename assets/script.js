@@ -6,6 +6,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const footerYear = document.getElementById('footerYear');
   const headerActions = document.querySelector('.header-actions');
 
+  const siteBrand = document.querySelector('.site-brand');
+  if (siteBrand) siteBrand.remove();
+
   const storedTheme = localStorage.getItem('theme');
   const preferredDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
   body.setAttribute('data-theme', storedTheme || (preferredDark ? 'dark' : 'light'));
