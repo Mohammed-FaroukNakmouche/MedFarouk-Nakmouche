@@ -23,23 +23,24 @@
     .profile-affiliation {
       display: inline-flex;
       align-items: center;
-      gap: 0.42rem;
+      gap: 0.32rem;
     }
     .profile-affiliation img {
       width: auto;
-      height: 18px;
-      max-width: 58px;
+      height: 15px;
+      max-width: 48px;
       object-fit: contain;
       flex: 0 0 auto;
     }
     .profile-affiliation .tmu-small-logo {
-      height: 20px;
-      max-width: 52px;
+      height: 17px;
+      max-width: 46px;
     }
     .profile-affiliation strong {
       color: var(--text);
       font-weight: 700;
     }
+    .logo-separator,
     .affiliation-separator {
       color: var(--muted);
     }
@@ -50,8 +51,8 @@
         gap: 0.42rem;
       }
       .affiliation-separator { display: none; }
-      .profile-affiliation img { height: 17px; }
-      .profile-affiliation .tmu-small-logo { height: 19px; }
+      .profile-affiliation img { height: 14px; max-width: 45px; }
+      .profile-affiliation .tmu-small-logo { height: 16px; max-width: 43px; }
       .profile-name { font-size: clamp(2rem, 11vw, 2.8rem); }
     }
   </style>
@@ -85,11 +86,13 @@
           <div class="profile-affiliations" aria-label="Current affiliations">
             <span class="profile-affiliation">
               <span><strong>Researcher</strong>, Huawei Technologies Canada Research Center</span>
+              <span class="logo-separator">—</span>
               <img src="https://upload.wikimedia.org/wikipedia/commons/0/07/Huawei_wordmark.svg" alt="Huawei" />
             </span>
             <span class="affiliation-separator">·</span>
             <span class="profile-affiliation">
               <span><strong>Affiliated Scientist</strong>, Toronto Metropolitan University</span>
+              <span class="logo-separator">—</span>
               <img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/TMU_logo.svg" alt="Toronto Metropolitan University" class="tmu-small-logo" />
             </span>
           </div>
