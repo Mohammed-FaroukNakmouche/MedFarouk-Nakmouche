@@ -9,6 +9,66 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/styles.css" />
+  <style>
+    .affiliation-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+      margin: 0.8rem 0 1.25rem;
+    }
+    .affiliation-item {
+      flex: 1 1 320px;
+      max-width: 470px;
+      min-width: 0;
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      padding: 0.68rem 0.82rem;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: var(--surface);
+    }
+    .affiliation-logo-wrap {
+      flex: 0 0 72px;
+      height: 38px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .affiliation-logo {
+      max-width: 72px;
+      max-height: 36px;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+    }
+    .tmu-logo { max-height: 34px; }
+    .affiliation-text {
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.08rem;
+      line-height: 1.25;
+      color: var(--text-soft);
+      font-size: 0.9rem;
+    }
+    .affiliation-text strong {
+      color: var(--text);
+      font-size: 0.92rem;
+      font-weight: 700;
+    }
+    @media (max-width: 640px) {
+      .affiliation-list { gap: 0.55rem; }
+      .affiliation-item {
+        flex-basis: 100%;
+        max-width: none;
+        padding: 0.62rem 0.7rem;
+      }
+      .affiliation-logo-wrap { flex-basis: 62px; }
+      .affiliation-logo { max-width: 62px; max-height: 32px; }
+      .profile-name { font-size: clamp(2rem, 11vw, 2.8rem); }
+    }
+  </style>
 </head>
 <body data-page="about">
   <header class="site-header">
@@ -38,11 +98,11 @@
           <h1 class="profile-name"><span style="font-weight:800;">Mohammed Farouk</span> <span style="font-weight:400;">Nakmouche</span></h1>
           <div class="affiliation-list" aria-label="Current affiliations">
             <div class="affiliation-item">
-              <span class="affiliation-logo-wrap huawei-logo-wrap"><img src="https://upload.wikimedia.org/wikipedia/commons/0/07/Huawei_wordmark.svg" alt="Huawei" class="affiliation-logo huawei-logo" /></span>
+              <span class="affiliation-logo-wrap"><img src="https://upload.wikimedia.org/wikipedia/commons/0/07/Huawei_wordmark.svg" alt="Huawei" class="affiliation-logo huawei-logo" /></span>
               <span class="affiliation-text"><strong>Researcher</strong><span>Huawei Technologies Canada Research Center</span></span>
             </div>
             <div class="affiliation-item">
-              <span class="affiliation-logo-wrap tmu-logo-wrap"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/TMU_logo.svg" alt="Toronto Metropolitan University" class="affiliation-logo tmu-logo" /></span>
+              <span class="affiliation-logo-wrap"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/TMU_logo.svg" alt="Toronto Metropolitan University" class="affiliation-logo tmu-logo" /></span>
               <span class="affiliation-text"><strong>Affiliated Scientist</strong><span>Toronto Metropolitan University</span></span>
             </div>
           </div>
